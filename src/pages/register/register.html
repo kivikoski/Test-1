@@ -1,0 +1,37 @@
+<!--code below is from labwork-5 team assignment. nothing changed. Jonas Kivikoski/1601557-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Create Account
+    </ion-title>
+  </ion-navbar>
+  <ion-buttons >
+    <button ion-button left class="loginnavbtn" (click)="goback()">
+      Previous Page
+    </button>
+  
+    </ion-buttons>
+
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+  
+</ion-list>
+
+<div padding>
+  <button block ion-button (click)="registerUser()" item-left>Register</button>
+</div>
+
+</ion-content>
