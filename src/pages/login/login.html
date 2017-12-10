@@ -1,23 +1,16 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Login
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content class="login-content" padding>
-    <ion-row class="logo-row">
-      <ion-col></ion-col>
-      <ion-col width-67>
-        <!--Login avatar added. Jonas Kivikoski/1601557 -->
-        <img src="http://www.theimaginativeconservative.org/wp-content/uploads/2016/06/the-jungle.jpg"/>
-      </ion-col>
-      <ion-col></ion-col>
-    </ion-row>
+<ion-content padding center text-center>
+    <video autoplay loop src="assets/video/Winter.mp4"></video> <!-- added video -->
     <div class="login-box">
-        
+      <!--code below is from practical test-1 assignment. nothing changed. Jonas Kivikoski/1601557-->   
       <ion-list>
-  
+      
     <ion-item>
       <ion-label floating>Username</ion-label>
       <ion-input type="text" #username></ion-input>
@@ -36,7 +29,9 @@
         <button ion-button (click)="createAccount()" item-left>Register</button>
           </ion-col>
         </ion-row> 
-        
+          
+             
       
     </div>
+    
   </ion-content>

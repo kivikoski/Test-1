@@ -1,4 +1,4 @@
-//code below is from labwork-5 team assignment. nothing changed. Jonas Kivikoski/1601557
+//code below is from practical test-1 nothing changed. Jonas Kivikoski/1601557
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 

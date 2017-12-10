@@ -1,4 +1,4 @@
-//code below is from labwork-5 team assignment. Firebase changed. Jonas Kivikoski/1601557
+//code below is from practical test-1. Jonas Kivikoski/1601557
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';

@@ -1,3 +1,4 @@
+//code below is from practical test-1 nothing changed. Jonas Kivikoski/1601557
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 

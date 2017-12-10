@@ -1,25 +1,33 @@
-<!--code below is from labwork-5 team assignment. nothing changed. Jonas Kivikoski/1601557-->
+<!-- customized menu.html below. Jonas Kivikoski/1601557-->
 <ion-menu [content]="content">
   
     <ion-header>
   
-      <ion-navbar>
-        <ion-title>Menu</ion-title>
-      </ion-navbar>
+        <ion-toolbar color="androidprimary">
+            <ion-title>Menu</ion-title>
+          </ion-toolbar> -->
+        </ion-header>
+        <ion-content class="myBg">
+        <div class="wrapper">
+          <img src="assets/imgs/ruusu.jpg"/>                       <!-- Here i have added, pictures to menubar. Jonas Kivikoski/1601557-->
+          <img src="assets/imgs/lehti.jpg" class="item-avatar">
+          <p class="name">Jonas Kivikoski</p>
+          <p class="email">jonas.kivikoski@student.laurea.fi</p>
+        </div>
   
-    </ion-header>
-  
-  
-    <ion-content>
-  
-      <ion-list>
+      <ion-list no-lines>
         <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
           <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
           {{p.title}}
-  
+         
         </button>
         </ion-list>
+      
+     <button ion-button color="white" block outline position="bottom" width="100%" class="item2" (click)="logout()">Logout</button>   <!-- Working LOGOUT button added. Jonas Kivikoski/1601557-->
+    
+
     </ion-content>
     </ion-menu>
   
     <ion-nav [root]="rootPage" #content swipeBackEnabled="false"> </ion-nav>
+    
